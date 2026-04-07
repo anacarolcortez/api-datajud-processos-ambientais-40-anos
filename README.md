@@ -20,3 +20,6 @@ Campos obtidos:
 A próxima etapa, além de realizar as buscas nos órgãos regionais, será de webscraping de detalhes dos processos em suas respectivas páginas de consulta dos órgãos competentes. Serão obtidos informações como o andamento e as partes envolvidas.
 
 O material será utilizado em projeto da ONG Sumaúma.
+
+Neste caso, do TRF-1, foram coletados 58.043 processos.
+
