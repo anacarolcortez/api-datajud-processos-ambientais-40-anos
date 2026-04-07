@@ -23,3 +23,4 @@ O material será utilizado em projeto da ONG Sumaúma.
 
 Neste caso, do TRF-1, foram coletados 58.043 processos.
 
+OBS: o algoritmo do exemplo foi executado em 07/04/2026 às 17:00
