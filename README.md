@@ -1,6 +1,6 @@
-# Processos ambientais de 1985 a 2025
+# Processos ambientais na Amazônia Legal
 
-Utilizando a biblioteca Requests do Python, o algoritmo "processos_ambientais_datajud" busca por dados básicos de processos ambientais utilizando a API do DataJud. Neste caso, em específico a busca foi realizada no TRF-1, que concentra 80% dos casos. Também serão feitas requisições nos Tribunais de Justiça estaduais na região da Amazônia Legal, todos disponíveis nas APIs do pŕóprio DataJud.
+Utilizando a biblioteca Requests do Python, o algoritmo "processos_ambientais_datajud" busca por dados básicos de processos ambientais utilizando a API do DataJud. Neste caso, em específico a busca foi realizada no TRF-1, que concentra 80% dos casos, mas pode ser feito com qualquer Tribunal, basta alterar a URL da requisição, conforme documentação das APIs do pŕóprio DataJud.
 
 * API: https://api-publica.datajud.cnj.jus.br/api_publica_trf1/_search
 * Documentação da API: https://datajud-wiki.cnj.jus.br/api-publica
@@ -31,7 +31,3 @@ Em seguida, o algoritmo "TRF1_webscraping_sincrono" realiza as buscas pelos deta
 * Outros Interessados
 
 O algoritmo de exemplo inclui configurações pertinentes à execução no Google Colab, para fins didáticos. Porém, não é possível rodar no Colab sem bloqueios rápidos por parte do servidor do TRF-1. Recomenda-se rodar localmente e de maneira síncrona - as tentativas de refatoração com assincronicidade falharam por serem facilmente bloqueadas como bots pelo servidor.
-
-Também serão feitas raspagens em órgãos regionais.
-
-O material será utilizado em projeto da ONG Sumaúma.
