@@ -1,6 +1,6 @@
 # Processos ambientais de 1985 a 2025
 
-Utilizando a biblioteca Requests do Python, o algoritmo busca por dados básicos de processos ambientais utilizando a API do DataJud. Neste caso, em específico a buca foi realizada no TRF-1, que concentra 80% dos casos. Também serão feitas requisições nos Tribunais de Justiça estaduais na região da Amazônia Legal, todos disponíveis nas APIs do pŕóprio DataJud.
+Utilizando a biblioteca Requests do Python, o algoritmo "processos_ambientais_datajud" busca por dados básicos de processos ambientais utilizando a API do DataJud. Neste caso, em específico a busca foi realizada no TRF-1, que concentra 80% dos casos. Também serão feitas requisições nos Tribunais de Justiça estaduais na região da Amazônia Legal, todos disponíveis nas APIs do pŕóprio DataJud.
 
 * API: https://api-publica.datajud.cnj.jus.br/api_publica_trf1/_search
 * Documentação da API: https://datajud-wiki.cnj.jus.br/api-publica
@@ -17,10 +17,21 @@ Campos obtidos:
 * orgao_julgador
 * assuntos
 
-A próxima etapa, além de realizar as buscas nos órgãos regionais, será de webscraping de detalhes dos processos em suas respectivas páginas de consulta dos órgãos competentes. Serão obtidos informações como o andamento e as partes envolvidas.
+Em seguida, o algoritmo "TRF1_webscraping_sincrono" realiza as buscas pelos detalhamentos dos processos com base em seus números, obtidos no algoritmo de requests. Para isso, faz raspagem de dados com Selenium na página web de consulta do órgão. O resultado inclui:
+
+* Número do Processo
+* Data de Distribuição
+* Classe Judicial 
+* Assunto
+* Jurisdição
+* Órgão Julgador
+* Status
+* Polo Ativo
+* Polo Passivo
+* Outros Interessados
+
+O algoritmo de exemplo inclui configurações pertinentes à execução no Google Colab, para fins didáticos. Porém, não é possível rodar no Colab sem bloqueios rápidos por parte do servidor do TRF-1. Recomenda-se rodar localmente e de maneira síncrona - as tentativas de refatoração com assincronicidade falharam por serem facilmente bloqueadas como bots pelo servidor.
+
+Também serão feitas raspagens em órgãos regionais.
 
 O material será utilizado em projeto da ONG Sumaúma.
-
-Neste caso, do TRF-1, foram coletados 58.043 processos.
-
-OBS: o algoritmo do exemplo foi executado em 07/04/2026 às 17:00
