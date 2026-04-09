@@ -30,4 +30,4 @@ Em seguida, o algoritmo "TRF1_webscraping_sincrono" realiza as buscas pelos deta
 * Polo Passivo
 * Outros Interessados
 
-O algoritmo de exemplo inclui configurações pertinentes à execução no Google Colab, para fins didáticos. Porém, não é possível rodar no Colab sem bloqueios rápidos por parte do servidor do TRF-1. Recomenda-se rodar localmente e de maneira síncrona - as tentativas de refatoração com assincronicidade falharam por serem facilmente bloqueadas como bots pelo servidor.
+O algoritmo de exemplo trabalha com controle de registros processados para contenção de falhas de execução caso ocorra algum bloqueio anti-bot. Recomenda-se rodar localmente e de maneira síncrona - as tentativas de refatoração com assincronicidade falharam por serem facilmente bloqueadas como bots pelo servidor.
